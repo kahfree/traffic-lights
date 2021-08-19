@@ -7,12 +7,14 @@ I developed this step by step as I found this the best approach to tackling the 
 After this was working I added the traffic sensors. I did this by delaying the lights for a minimum of two seconds and then running a for loop that iterated every second for a maximum of 10 seconds. At each iteration, it checks to see if there is traffic at the red light. If there is no traffic at the green light but some at the red light then the lights will begin to change.
 The next step was adding the daylight sensor, this was done by reading the analog value of the sensor and checking it against a threshold of 150 that I arbitrarily set. This was then checked before each 'stage' of the traffic lights and the length of the lights are changed depending on if it is daytime or not.
 
-Full images of the project:
+### Full images of the project:
+
+
 ![image](https://user-images.githubusercontent.com/38580052/130058662-6a3ee3fd-1021-45b7-80ec-142455944474.png)
 ![image](https://user-images.githubusercontent.com/38580052/130058690-06325651-fca3-4085-9cb7-cefc72271c7e.png)
 ![image](https://user-images.githubusercontent.com/38580052/130058703-18da500e-6410-4a06-8268-2aeffe2acaec.png)
 
-here is a full look at the code:
+### here is a full look at the code:
 ```C
 const int GreenLed_A = 3;
 const int YellowLed_A = 4;
